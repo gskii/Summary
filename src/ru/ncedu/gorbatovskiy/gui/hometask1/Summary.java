@@ -21,7 +21,6 @@ public class Summary extends JFrame {
         tabs.setTabPlacement(SwingConstants.LEFT);
         add(tabs);
 
-
         JPanel generalPane = new JGeneralPanel(new BorderLayout(), model);
         tabs.addTab("Основное", generalPane);
         tabs.addTab("Уровень знаний", new JKnowledgeTable(new BorderLayout(), model));

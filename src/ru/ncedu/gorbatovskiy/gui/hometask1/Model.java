@@ -11,10 +11,16 @@ public class Model {
     private String middleName;
     private String about;
     private Calendar birthDate;
-    private KnowledgeLevel java;
-    private KnowledgeLevel sql;
-    private KnowledgeLevel swing;
-    private KnowledgeLevel design;
+    private KnowledgeStore knowledges;
+
+    public Model() {
+        lastName = "";
+        firstName = "";
+        middleName = "";
+        about = "";
+        birthDate = Calendar.getInstance();
+        knowledges = new KnowledgeStore();
+    }
 
     public String getLastName() {
         return lastName;
@@ -56,35 +62,11 @@ public class Model {
         this.birthDate = birthDate;
     }
 
-    public KnowledgeLevel getJava() {
-        return java;
+    public KnowledgeStore getKnowledges() {
+        return knowledges;
     }
 
-    public void setJava(KnowledgeLevel java) {
-        this.java = java;
-    }
-
-    public KnowledgeLevel getSql() {
-        return sql;
-    }
-
-    public void setSql(KnowledgeLevel sql) {
-        this.sql = sql;
-    }
-
-    public KnowledgeLevel getSwing() {
-        return swing;
-    }
-
-    public void setSwing(KnowledgeLevel swing) {
-        this.swing = swing;
-    }
-
-    public KnowledgeLevel getDesign() {
-        return design;
-    }
-
-    public void setDesign(KnowledgeLevel design) {
-        this.design = design;
+    public void setKnowledges(KnowledgeStore knowledges) {
+        this.knowledges = knowledges;
     }
 }

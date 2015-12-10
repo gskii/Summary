@@ -14,7 +14,7 @@ public class JAboutPanel extends JPanel {
     public JAboutPanel(LayoutManager layout, Model model) {
         super(layout);
         this.model = model;
-        aboutTextArea = new JTextArea();
+        aboutTextArea = new JTextArea(model.getAbout());
         add(new JLabel("О себе"), BorderLayout.NORTH);
         add(new JScrollPane(aboutTextArea), BorderLayout.CENTER);
         aboutTextArea.addKeyListener(new KeyListener() {
