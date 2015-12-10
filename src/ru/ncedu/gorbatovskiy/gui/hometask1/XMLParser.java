@@ -13,7 +13,7 @@ import java.io.IOException;
  */
 public class XMLParser {
     public static void WriteToFile(Model model, String path) {
-        XStream xs = new XStream(new StaxDriver());
+        XStream xs = new XStream(new DomDriver());
         try {
             FileOutputStream fs = new FileOutputStream(path);
             xs.toXML(model, fs);
@@ -23,7 +23,7 @@ public class XMLParser {
         }
     }
 
-    public static Object ReadFromFile(Model model, String path) {
+    public static Model ReadFromFile(Model model, String path) {
         XStream xs = new XStream(new DomDriver());
         try {
             FileInputStream fis = new FileInputStream(path);

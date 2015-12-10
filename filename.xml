@@ -1,0 +1,31 @@
+<ru.ncedu.gorbatovskiy.gui.hometask1.Model>
+  <lastName>Горбатовский</lastName>
+  <firstName>Владислав</firstName>
+  <middleName>Владимирович</middleName>
+  <about>У данного приложения немного страдает структура.
+Каюсь, ибо времени было мало, а хотелось реализовать
+все по максимуму. Ну, по крайней мере, у меня получилось
+сделать растягивание именно так, как планировал) 
+У сторонней библиотеки, которую я использую для парсинга XML есть
+забавный баг, она проглатывает последние символы у строк!
+Еще хотелось бы отметить автонаполнение таблиц уровня знаний,
+я довольно много времени провел над их написанием)</about>
+  <birthDate>
+    <time>790634235515</time>
+    <timezone>Europe/Moscow</timezone>
+  </birthDate>
+  <knowledges>
+    <names>
+      <string>Java</string>
+      <string>Swing</string>
+      <string>SQL</string>
+      <string>Проектрирование</string>
+    </names>
+    <values>
+      <ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>REGULAR</ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>
+      <ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>SKETCHY</ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>
+      <ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>REGULAR</ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>
+      <ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>SKETCHY</ru.ncedu.gorbatovskiy.gui.hometask1.KnowledgeLevel>
+    </values>
+  </knowledges>
+</ru.ncedu.gorbatovskiy.gui.hometask1.Model>
