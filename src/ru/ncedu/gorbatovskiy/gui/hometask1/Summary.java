@@ -7,8 +7,12 @@ import java.awt.*;
  * Created by gorbatovskiy on 09.12.15.
  */
 public class Summary extends JFrame {
+    private Model model;
+
     public Summary() throws HeadlessException {
         super("Summary");
+        model = new Model();
+
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         setLocation(100, 100);
@@ -18,9 +22,9 @@ public class Summary extends JFrame {
         add(tabs);
 
 
-        JPanel generalPane = new JGeneralPanel(new BorderLayout(), null);
+        JPanel generalPane = new JGeneralPanel(new BorderLayout(), model);
         tabs.addTab("Основное", generalPane);
-        tabs.addTab("Уровень знаний", new JKnowledgeTable(new BorderLayout(), null));
+        tabs.addTab("Уровень знаний", new JKnowledgeTable(new BorderLayout(), model));
         setVisible(true);
     }
 
